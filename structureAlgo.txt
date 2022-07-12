@@ -1,0 +1,62 @@
+Structure ALGORITHME :
+
+	collaboratorIsFree();
+
+
+Variables :
+
+	$collaborator = string;
+	$dateStart    = datetime;
+	$dayReviewed  = datetime;
+
+DEBUT
+
+
+
+FIN
+
+-------------------------------------------------
+
+	daysProject();
+
+
+Variables :
+
+	$array        = [[]];
+	$dateStart    = datetime;
+	$daysReviewed = datetime;
+	$before       = button;
+	$validate     = button;
+
+DEBUT
+
+	TANTQUE daysReviewed > 0;
+		SI dateStart < daysReviewed;
+			# On rentre dans la boucle de la function collaborateurIsFree();
+			SI collaborateurIsFree() === true;
+				Projet ajouté au collaborateur;
+				daysReviewed--;
+			 SINON SI collaborateurIsFree() === false;
+				On repasse dans la boucle de collaborateurIsFree();
+			 SINON
+				dateStart++;
+			FINSI
+		FINSI
+			LIRE array;
+		dateStart++;
+	FINTANTQUE
+
+	SI $validate->isSubmitted();
+
+		$manager->persist($array);
+		$manager->flush();
+
+		return $this->redirectToRoute('app_calendrier_apres');
+
+	 SINON SI $before->isSubmitted();
+
+		return $this->redirectToRoute('app_add_project');
+
+	FINSI
+
+FIN

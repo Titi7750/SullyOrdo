@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Supprimer collaborateur
+{% endblock %}
+
+{% block body %}
+
+	{% block header %}
+		<a href="calendrier_apres"><img src="/img/logo_sully.svg" alt="Logo Sully"></a>
+	{% endblock %}
+
+	{% for project in projects %}
+		<table>
+			<tr>
+				<td>{{ project.id }}</td>
+				<td>{{ project.titre }}</td>
+				<td>
+					<a onclick = "if (confirm('Voulez-vous vraiment supprimer le projet id: {{ project.id }} {{ project.titre }} ?')) commentDelete(1); return false" href="{{ path('app_delete_project', {'id': project.id}) }}">Supprimer</a>
+				</td>
+			</tr>
+		</table>
+	{% endfor %}
+
+	{% block javascripts %}
+		<script src="/js/supp_projet.js"></script>
+	{% endblock %}
+{% endblock %}

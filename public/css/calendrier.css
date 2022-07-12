@@ -1,0 +1,144 @@
+table {
+    margin-top: 10em;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1.2em;
+    white-space: nowrap;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+.td {
+    border: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+td {
+    border-top: 2px solid #CECECE;
+    border-bottom: 2px solid #CECECE;
+    border-left: 1px solid #CECECE;
+    border-right: 1px solid #CECECE;
+    padding: 8px;
+}
+
+.collab {
+    border-left: none;
+}
+
+.epai {
+    border-right: 8px solid rgba(130, 130, 130, 0.49);
+}
+
+#cercle {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background: #F0B450;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: small;
+    line-height: 25px;
+    text-align: center;
+    position: absolute;
+    margin-left: 3em;
+}
+
+#cercle1{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background: #FF8778;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    margin-left: 1.4em;
+}
+
+#cercle2{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background: #E66496;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#cercle3{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background: #A05AAA;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    margin-left: 1.8em;
+}
+
+#cercle4{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background: #C83246;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#cercleConge {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background: #A7A7A7;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#fond {
+    background-color: #bdbdbd;
+}
+
+.jourJ {
+    background-color: #660066;
+    border-radius: 100px;
+    width: 10px;
+    height: 10px;
+    color: #fff;
+}
+
+.mois {
+    display: flex;
+    align-items: center;
+    margin-top: -8em;
+    margin-left: 10em;
+    margin-bottom: -10em;
+    position: fixed;
+}
+
+.size {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 25px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.bouton {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 25px;
+    border: 1px solid #CC0066;
+    background-color: #fff;
+    color: #CC0066;
+    font-size: 15px;
+    cursor: pointer;
+}

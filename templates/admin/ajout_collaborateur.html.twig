@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajout d'un collaborateur
+{% endblock %}
+
+{% block body %}
+
+	{% block header %}
+		<a href="calendrier_apres"><img src="/img/logo_sully.svg" alt="Logo Sully"></a>
+	{% endblock %}
+
+	{{ form_start(form, {'attr':{'class':'form'}}) }}
+
+	<div class="form-group">
+		<div class="form-row">
+			{{ form_label(form.prenom) }}
+			{{ form_widget(form.prenom, {'attr':{'class':'input'}}) }}
+		</div>
+
+		<div>
+			{{ form_label(form.nom) }}
+			{{ form_widget(form.nom, {'attr':{'class':'input1'}}) }}
+		</div>
+	</div>
+
+	<div>
+		{{ form_label(form.competence_principale) }}
+		{{ form_widget(form.competence_principale, {'attr':{'class':'input'}}) }}
+	</div>
+
+	<div>
+		{{ form_label(form.competence_secondaire) }}
+		{{ form_widget(form.competence_secondaire, {'attr':{'class':'input'}}) }}
+	</div>
+
+	<div>
+		{{ form_label(form.competence_terciere) }}
+		{{ form_widget(form.competence_terciere, {'attr':{'class':'input'}}) }}
+	</div>
+
+	<div>
+		{{ form_widget(form.ajouter) }}
+	</div>
+
+	{{ form_rest(form) }}
+	{{ form_end(form) }}
+
+	{% block footer %}
+		<div class="footer"></div>
+	{% endblock %}
+
+	<link rel="stylesheet" href="{{ asset('css/ajout_collaborateur.css') }}">
+{% endblock %}

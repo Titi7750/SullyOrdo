@@ -1,0 +1,906 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Calendrier après connexion
+{% endblock %}
+
+{% block body %}
+
+	{% include 'menu/_menu.html.twig' %}
+
+	<div class="mois">
+		<div class="size">&lt;</div>
+		<h5>MAI</h5>
+		<div class="size">&gt;</div>
+		<a href="#point">
+			<button class="bouton">Aujourd'hui</button>
+		</a>
+	</div>
+
+	<table>
+		<tr id="date">
+			<td class="td">Collaborateurs</td>
+			<td class="td">LUN<br>2</td>
+			<td id="point" class="jourJ td">MAR<br>3</td>
+			<td class="td">MER<br>4</td>
+			<td class="td">JEU<br>5</td>
+			<td class="td">VEN<br>6</td>
+			<td class="td">LUN<br>9</td>
+			<td class="td">MAR<br>10</td>
+			<td class="td">MER<br>11</td>
+			<td class="td">JEU<br>12</td>
+			<td class="td">VEN<br>13</td>
+			<td class="td">LUN<br>16</td>
+			<td class="td">MAR<br>17</td>
+			<td class="td">MER<br>18</td>
+			<td class="td">JEU<br>19</td>
+			<td class="td">VEN<br>20</td>
+			<td class="td">LUN<br>23</td>
+			<td class="td">MAR<br>24</td>
+			<td class="td">MER<br>25</td>
+			<td class="td">JEU<br>26</td>
+			<td class="td">VEN<br>27</td>
+			<td class="td">LUN<br>30</td>
+			<td class="td">MAR<br>31</td>
+			<td class="td">MER<br>1</td>
+			<td class="td">JEU<br>2</td>
+			<td class="td">VEN<br>3</td>
+			<td class="td">LUN<br>4</td>
+			<td class="td">MAR<br>5</td>
+			<td class="td">MER<br>6</td>
+			<td class="td">JEU<br>7</td>
+			<td class="td">VEN<br>8</td>
+			<td class="td">LUN<br>11</td>
+			<td class="td">MAR<br>12</td>
+			<td class="td">MER<br>13</td>
+			<td class="td">JEU<br>14</td>
+			<td class="td">VEN<br>15</td>
+			<td class="td">LUN<br>18</td>
+			<td class="td">MAR<br>19</td>
+			<td class="td">MER<br>20</td>
+			<td class="td">JEU<br>21</td>
+			<td class="td">VEN<br>22</td>
+			<td class="td">LUN<br>25</td>
+			<td class="td">MAR<br>26</td>
+			<td class="td">MER<br>27</td>
+			<td class="td">JEU<br>28</td>
+			<td class="td">VEN<br>29</td>
+			<td class="td">LUN<br>1</td>
+		</tr>
+		<tr>
+			<td class="collab">Sarah</td>
+			<td id="survol">JPF<div id="cercle">AO</div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td class="epai">JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td class="epai">JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td class="epai">JPF<div id="cercle"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Férié<div id="cercleConge"></div>
+			</td>
+			<td id="fond" class="epai">Congé<div id="cercleConge"></div>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="collab">Christophe</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td class="epai">Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td class="epai">Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td class="epai">Ordo<div id="cercle1"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Férié<div id="cercleConge"></div>
+			</td>
+			<td id="fond" class="epai">Congé<div id="cercleConge"></div>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="collab">Adrien</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td class="epai">Enedis<div id="cercle2"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond" class="epai">Congé<div id="cercleConge"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td class="epai">Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td id="fond">Férié<div id="cercleConge"></div>
+			</td>
+			<td class="epai">Enedis<div id="cercle2"></div>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="collab">Clara</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td class="epai">Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td>Ordo<div id="cercle1"></div>
+			</td>
+			<td class="epai">Ordo<div id="cercle1"></div>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td id="fond">Férié<div id="cercleConge"></div>
+			</td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="collab">Jean</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td class="epai">JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td class="epai">JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td class="epai">JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td>JPF<div id="cercle"></div>
+			</td>
+			<td id="fond">Férié<div id="cercleConge"></div>
+			</td>
+			<td class="epai">JPF<div id="cercle"></div>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="collab">Paul</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond" class="epai">Congé<div id="cercleConge"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td class="epai">Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td class="epai">Enedis<div id="cercle2"></div>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td id="fond">Férié<div id="cercleConge"></div>
+			</td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="collab">Inès</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td class="epai">Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td class="epai">Enedis<div id="cercle2"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond" class="epai">Congé<div id="cercleConge"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td>Enedis<div id="cercle2"></div>
+			</td>
+			<td id="fond">Férié<div id="cercleConge"></div>
+			</td>
+			<td class="epai">Enedis<div id="cercle2"></div>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="collab">Chloé</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td class="epai">EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td class="epai">EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td class="epai">EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td id="fond">Férié<div id="cercleConge"></div>
+			</td>
+			<td class="epai">EDF<div id="cercle3"></div>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="collab">Stéphane</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td class="epai">France<div id="cercle4"></div>
+			</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td class="epai">France<div id="cercle4"></div>
+			</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td class="epai">France<div id="cercle4"></div>
+			</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td id="fond">Férié<div id="cercleConge"></div>
+			</td>
+			<td class="epai">France<div id="cercle4"></div>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="collab">Magalie</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td class="epai">EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td class="epai">EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td class="epai">EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td>EDF<div id="cercle3"></div>
+			</td>
+			<td id="fond">Férié<div id="cercleConge"></div>
+			</td>
+			<td class="epai">EDF<div id="cercle3"></div>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="collab">Maurice</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond">Congé<div id="cercleConge"></div>
+			</td>
+			<td id="fond" class="epai">Congé<div id="cercleConge"></div>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td id="fond">Férié<div id="cercleConge"></div>
+			</td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="collab">Angélique</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td>France<div id="cercle4"></div>
+			</td>
+			<td class="epai">France<div id="cercle4"></div>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td id="fond">Férié<div id="cercleConge"></div>
+			</td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="epai"></td>
+			<td></td>
+		</tr>
+		{% for collaborateur in collaborateurs %}
+			<tr>
+				<td class="collab">{{ collaborateur.prenom }}</td>
+				{% for projet in projets %}
+					{% if loop.index is divisible by 5 %}
+						<td class="epai">{{ projet.titre }}</td>
+					{% else %}
+						<td>{{ projet.titre }}</td>
+					{% endif %}
+				{% endfor %}
+			</tr>
+		{% endfor %}
+	</table>
+
+	<link rel="stylesheet" href="{{ asset('css/calendrier.css') }}">
+
+	<script>
+
+		var enlMenu = document.getElementById("menu");
+		var enlMois = document.getElementsByClassName("mois");
+		var date = document.getElementById('date');
+		var collab = document.querySelectorAll('.collab');
+
+		window.onscroll = function () {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				enlMenu.style.display = "none";
+				enlMois[0].style.display = "none";
+				date.style.position = "sticky";
+				date.style.top = "0";
+				date.style.zIndex = "2";
+				date.style.backgroundColor = "white";
+			} else {
+				enlMenu.style.display = "block";
+				enlMois[0].style.display = "flex";
+				date.style.position = "relative";
+			}
+
+			if (document.body.scrollLeft > 20 || document.documentElement.scrollLeft > 20) {
+				for( var i = 0; i < collab.length; i++) {
+					collab[i].style.position = "sticky";
+					collab[i].style.left = "0";
+					collab[i].style.zIndex = "1";
+					collab[i].style.backgroundColor = "white";
+				}	
+			} else {
+				collab.style.position = "relative";
+			}
+		};
+
+	</script>
+{% endblock %}

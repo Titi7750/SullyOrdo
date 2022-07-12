@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Supprimer collaborateur
+{% endblock %}
+
+{% block body %}
+
+	{% block header %}
+		<a href="calendrier_apres"><img src="/img/logo_sully.svg" alt="Logo Sully"></a>
+	{% endblock %}
+
+	{% for collaborator in collaborators %}
+		<table>
+			<tr>
+				<td>{{ collaborator.id }}</td>
+				<td>{{ collaborator.nom }}</td>
+				<td>{{ collaborator.prenom }}</td>
+				<td>
+					<a onClick = "if (confirm('Voulez-vous vraiment supprimer le collaborateur id: {{ collaborator.id }} {{ collaborator.prenom }} {{ collaborator.nom }} ?')) commentDelete(1); return false" href="{{ path('app_delete_collaborator', {'id': collaborator.id}) }}">Supprimer</a>
+				</td>
+			</tr>
+		</table>
+	{% endfor %}
+
+{% endblock %}

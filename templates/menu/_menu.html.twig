@@ -1,0 +1,17 @@
+<nav>
+	<div id="menu">
+		{% if is_granted('ROLE_ADMIN') %}
+			<a class="menu" {% if app.request.get('_route') == 'app_add_project' %} active {% endif %} " href=" {{ path('app_add_project') }} ">Ajouter un projet</a>
+			<a class="menu" {% if app.request.get('_route') == 'app_add_collaborator' %} active {% endif %} " href=" {{ path('app_add_collaborator') }} ">Ajouter un collaborateur</a>
+			<a class="menu" {% if app.request.get('_route') == 'app_display_project' %} active {% endif %} " href=" {{ path('app_display_project') }} ">Supprimer projet</a>
+			<a class="menu" {% if app.request.get('_route') == 'app_display_collaborator' %} active {% endif %} " href=" {{ path('app_display_collaborator') }} ">Supprimer collaborateur</a>
+		{% endif %}
+		{% if is_granted('IS_AUTHENTICATED_FULLY') %}
+			<a class="menu" href="{{ path('app_logout') }}">Déconnexion</a>
+		{% else %}
+			<a class="menu" {% if app.request.get('_route') == 'app_login' %} active {% endif %} " href=" {{ path('app_login') }} ">Connexion</a>
+		{% endif %}
+	</div>
+</nav>
+
+<link rel="stylesheet" href="{{ asset('css/menu.css') }}">
