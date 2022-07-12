@@ -25,9 +25,6 @@ Variables :
 	$array        = [[]];
 	$dayTocheck	  = datetime;
 	$daysReviewed = datetime;
-	$before       = button;
-	$validate     = button;
-
 	$dayTocheck = $dateStart;
 DEBUT
 
