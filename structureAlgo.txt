@@ -23,40 +23,27 @@ FIN
 Variables :
 
 	$array        = [[]];
-	$dateStart    = datetime;
+	$dayTocheck	  = datetime;
 	$daysReviewed = datetime;
 	$before       = button;
 	$validate     = button;
 
+	$dayTocheck = $dateStart;
 DEBUT
 
 	TANTQUE daysReviewed > 0;
-		SI dateStart < daysReviewed;
+		
 			# On rentre dans la boucle de la function collaborateurIsFree();
-			SI collaborateurIsFree() === true;
+			RECUPERE LISTE collaborateurs : collaborators
+			FOR (collaborateur in collaborators)
+			{
+				SI collaborateurIsFree($dayTocheck);
 				Projet ajouté au collaborateur;
 				daysReviewed--;
-			 SINON SI collaborateurIsFree() === false;
-				On repasse dans la boucle de collaborateurIsFree();
-			 SINON
-				dateStart++;
-			FINSI
-		FINSI
-			LIRE array;
-		dateStart++;
+			}
+			$dayTocheck++;
+			
+	
 	FINTANTQUE
-
-	SI $validate->isSubmitted();
-
-		$manager->persist($array);
-		$manager->flush();
-
-		return $this->redirectToRoute('app_calendrier_apres');
-
-	 SINON SI $before->isSubmitted();
-
-		return $this->redirectToRoute('app_add_project');
-
-	FINSI
 
 FIN

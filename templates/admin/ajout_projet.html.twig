@@ -38,10 +38,10 @@
 		</div>
 	</div>
 
-	{# <div>
+	<div>
 		{{ form_label(form.collaborateurs) }}
 		{{ form_widget(form.collaborateurs, {'attr':{'class':'input2'}}) }}
-	</div> #}
+	</div>
 
 	<div>
 		{{ form_label(form.reste_a_faire) }}
@@ -68,24 +68,24 @@
 	
 		<script>
 
-			// var $competence = $('#projet_competences');
+			var $competence = $('#projet_competences');
 
-			// $competence.change(function () {
-			// 	var $form = $(this).closest('form');
-			// 	var data = {};
-			// 		data[$competence.attr('id')] = $competence.val();
-			// 		console.log(data);
-			// 	$.ajax({
-			// 		url: $form.attr('action'),
-			// 		type: $form.attr('method'),
-			// 		data: data,
-			// 		complete: function (html) {
-			// 			$('#projet_collaborateurs').replaceWith(
-			// 				$(html.responseText).find('#projet_collaborateurs')
-			// 			);
-			// 		}
-			// 	});
-			// });
+			$competence.change(function () {
+				var $form = $(this).closest('form');
+				var data = {};
+					data[$competence.attr('id')] = $competence.val();
+					console.log(data);
+				$.ajax({
+					url: $form.attr('action'),
+					type: $form.attr('method'),
+					data: data,
+					complete: function (html) {
+						$('#projet_collaborateurs').replaceWith(
+							$(html.responseText).find('#projet_collaborateurs')
+						);
+					}
+				});
+			});
 
 		</script>
 

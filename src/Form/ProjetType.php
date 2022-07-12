@@ -17,7 +17,6 @@ use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormEvent;
 use Symfony\Component\Form\FormEvents;
-use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormInterface;
 
 class ProjetType extends AbstractType
@@ -30,6 +29,7 @@ class ProjetType extends AbstractType
                 'label' => 'Chef de projet',
                 'choice_label' => 'nom',
                 'placeholder' => 'Chef de projet qui s\'occupe du projet',
+                'mapped' => false,
                 'attr' => ['class' => 'form-control'],
             ])
             ->add('titre', TextType::class, [
@@ -63,33 +63,33 @@ class ProjetType extends AbstractType
                 'label' => 'Valider',
             ]);
 
-        // $formModifier = function (FormInterface $form, Competences $competences = null) {
-        //     $collaborateurs = null === $competences ? [] : $competences->getCompetencesCollaborateurs();
+        $formModifier = function (FormInterface $form, Competences $competences = null) {
+            $collaborateurs = null === $competences ? [] : $competences->getCompetencesCollaborateurs();
 
-        //     $form->add('collaborateurs', EntityType::class, [
-        //         'class' => Collaborateurs::class,
-        //         'placeholder' => 'Sélectionner un/des collaborateur(s)',
-        //         'choice_label' => 'prenom',
-        //         'choices' => $collaborateurs,
-        //     ]);
-        // };
+            $form->add('collaborateurs', EntityType::class, [
+                'class' => Collaborateurs::class,
+                'placeholder' => 'Sélectionner un/des collaborateur(s)',
+                'choice_label' => 'prenom',
+                'choices' => $collaborateurs,
+            ]);
+        };
         
-        // $builder->addEventListener(
-        //     FormEvents::PRE_SET_DATA,
-        //     function (FormEvent $event) use ($formModifier) {
-        //         $data = $event->getData();
+        $builder->addEventListener(
+            FormEvents::PRE_SET_DATA,
+            function (FormEvent $event) use ($formModifier) {
+                $data = $event->getData();
                 
-        //         $formModifier($event->getForm(), $data->getCompetences());
-        //     }
-        // );
+                $formModifier($event->getForm(), $data->getCompetences());
+            }
+        );
 
-        // $builder->get('competences')->addEventListener(
-        //     FormEvents::POST_SUBMIT,
-        //     function (FormEvent $event) use ($formModifier) {
-        //         $competences = $event->getForm()->getData();
-        //         $formModifier($event->getForm()->getParent(), $competences);
-        //     }
-        // );
+        $builder->get('competences')->addEventListener(
+            FormEvents::POST_SUBMIT,
+            function (FormEvent $event) use ($formModifier) {
+                $competences = $event->getForm()->getData();
+                $formModifier($event->getForm()->getParent(), $competences);
+            }
+        );
     }
 
     public function configureOptions(OptionsResolver $resolver): void
